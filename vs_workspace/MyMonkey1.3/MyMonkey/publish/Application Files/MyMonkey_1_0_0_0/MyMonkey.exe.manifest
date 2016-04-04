@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MyMonkey.exe" version="1.0.0.0" publicKeyToken="c5516c114d948dd2" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MyMonkey" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="MyMonkey.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyMonkey.exe" size="8192">
+      <assemblyIdentity name="MyMonkey" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>FXUq+vo7CUKzErA+xvfmIK7fsaU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=CORP\xieyuchang" issuerKeyHash="69ab6f330918d182266d7fa188060840bed053fc" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fFOvfpRtnS8Bm4JvndCA4K1+e9U=</DigestValue></Reference></SignedInfo><SignatureValue>Gok9R0Q47Dr9wlE6VGzVwIHHrvyPiJfCzxlKu0NUWUvFyYSHoMijBCJl/Cw561JdvqlO6pI90c8I7ByLw1RxzAG6VckBPHmmjojWSiaGZL0ci8sDTJbcPPr0mwZyeHWX7JU4wbZKqu4uUB6e/ByscTM8CDDg0qxcDMKzB+DUsWM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oPLi9BQSitTNiu5pwKDZoJCat6quVnDGKAOiQ9yJD6Y9W8frX2nHpmUO0A/AohZtHeYrbbbHnTt+3F27k5uXQHDF41Rn/5HHglj7iUdnfW5eD7WuLkYGn6fW5wInHpa7HfTreJKlW9dHbAAGc95nj/+KqUDO76Rp3XjsRQeABxM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d57b7eade080d09d6f829b012f9d6d947eaf537c" Description="" Url=""><as:assemblyIdentity name="MyMonkey.exe" version="1.0.0.0" publicKeyToken="c5516c114d948dd2" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CORP\xieyuchang</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>JlYqCS3vURhnqcK6qBIZSP9IQx0=</DigestValue></Reference></SignedInfo><SignatureValue>QG18CE7/XgNbouekLbetVf6UCMJEEteH9Zw1cxtD6K5mnhQZmDMsVWg7PPi5s3+nqa+I1RTkNHeKOqOhrxCVDi2F4jSfnykUyt6d31nmKoK6bade7XiqjY9fdqkpi+Zb+wEtLU7a3QUmPAG/jpEmdeN4DGPqbQA2ZCJ8f+42e9E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oPLi9BQSitTNiu5pwKDZoJCat6quVnDGKAOiQ9yJD6Y9W8frX2nHpmUO0A/AohZtHeYrbbbHnTt+3F27k5uXQHDF41Rn/5HHglj7iUdnfW5eD7WuLkYGn6fW5wInHpa7HfTreJKlW9dHbAAGc95nj/+KqUDO76Rp3XjsRQeABxM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQUmeokB6zG4VIUiawc3tMLjANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4AQwBPAFIAUABcAHgAaQBlAHkAdQBjAGgAYQBuAGcwHhcNMTUwNDI0MDkxMzE1WhcNMTYwNDIzMTUxMzE1WjApMScwJQYDVQQDHh4AQwBPAFIAUABcAHgAaQBlAHkAdQBjAGgAYQBuAGcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKDy4vQUEorUzYruacCg2aCQmreqrlZwxigDokPciQ+mPVvH619px6ZlDtAPwKIWbR3mK222x507ftxdu5Obl0BwxeNUZ/+Rx4JY+4lHZ31uXg+1ri5GBp+n1ucCJx6Wux3063iSpVvXR2wABnPeZ4//iqlAzu+kad147EUHgAcTAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAHdJEer5wIkQ87ALeBawLAmy/9nBFygUDoerkE8+3ki06opZmO3eOoOnxmDOT20iciMBva5smc8qhY5NgF1NbaMEDnE30Nikb+OM7qpK1eztcTEWruVWKmUSFsViatbUjrzXVWQ9t4mX/EyhxUmd4vw2wzRU4p8OUa8oBuDRiBzM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
